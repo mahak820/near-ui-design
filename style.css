@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;  
+    transition: all ease-in-out .3s;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.nav-bar{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.first{
+    height: 9vh;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-inline-start: 30px;
+}
+.second{
+    height: 9vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.third{
+    height: 9vh;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-inline-end: 40px;
+}
+.third p{
+    margin-right: 20px;
+}
+.second p:hover{
+    color: rgb(124, 51, 175);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.hero-section{
+    width: 100%;
+    height: 50vh;
+  
+  background-image: url(./image/final.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+ 
+
+}
+.start{
+    height: 50vh;
+    width: 20%;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.start hr{
+    width: 50%;
+    height: 1px;
+    margin-top: 8px;
+    background-color: black;
+    border: none;
+    color: black;
+}
+.start h6{
+    font-size: 15px;
+}
+.end{
+    height: 50vh;
+    width: 50%;
+    padding: 40px;
+}
+.end p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.end h1{
+font-size: 40px;
+}
+
+.home-section{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px;
+}
+.box1{
+    background-color: #f6f6ff;
+}
+.box1:nth-child(1){
+    display: grid;
+    grid-row: 1/3;
+}
+.change{
+    color: rgb(81, 81, 203);
+}
+.ok{
+    color: rgb(202, 134, 8);
+    margin-left: 10px;
+}
+.ok:hover{
+    text-decoration: underline;
+}
+.no:hover{
+    text-decoration: underline;
+}
+.change:hover{
+    text-decoration: underline;
+}
+.no{
+    color: rgb(150, 98, 199);
+    margin-left: 10px;
+}
+.box1:nth-child(4){
+    padding: 30px 30px;
+    background-color:#f8ebef;
+}
+.box1:nth-child(3){
+    padding: 30px 30px;
+}
+.box1:nth-child(2){
+    padding: 30px 30px;
+}
+.box1:nth-child(6){
+    padding: 30px 30px;
+    background-color: #f3ebf5;
+}
+.box1:nth-child(7){
+    padding: 30px 30px;
+
+}
+.box1:nth-child(5){
+    padding: 30px 30px;
+    background-color: #f3ebf5;
+}
+.box1:nth-child(4) p{
+font-size: 14px;
+margin-top: 10px;
+}
+.box1:nth-child(2) p{
+    font-size: 14px;
+    margin-top: 10px;
+    }
+    .box1:nth-child(5) p{
+        font-size: 14px;
+        margin-top: 10px;
+        }
+        .box1:nth-child(7) p{
+            font-size: 14px;
+            margin-top: 10px;
+            }
+            .box1:nth-child(6) p{
+                font-size: 14px;
+                margin-top: 10px;
+                }
+.box1:nth-child(4) h1{
+    font-size: 20px;
+    display: flex;
+    }
+    .box1:nth-child(3) p{
+        font-size: 14px;
+        margin-top: 10px;
+        }
+        .box1:nth-child(3) h1{
+            font-size: 20px;
+            display: flex;
+            }
+            .box1:nth-child(2) h1{
+                font-size: 20px;
+                display: flex;
+                }
+                .box1:nth-child(6) h1{
+                    font-size: 20px;
+                    display: flex;
+                    }
+                    .box1:nth-child(7) h1{
+                        font-size: 20px;
+                        display: flex;
+                        }
+                        .box1:nth-child(5) h1{
+                            font-size: 20px;
+                            display: flex;
+                            }
+    @media( max-width:768px){
+        .container{
+            width: 100%;
+            height: 9vh;
+        }
+        .nav-bar{
+            width: 100%;
+            height: 9vh;
+        }
+        .first{
+            font-size: 10px;
+        }
+        .second{
+            width: 70%;
+            font-size: 10px;
+        }
+        .third{
+           display: none;
+        }
+        .hero-section{
+            width: 100%;
+            height: 45vh;
+            background-color: aqua;
+        }
+        .start{
+            display: none;
+        }
+        .end{
+           width: 100%;
+           height: 50vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+        }
+        .end h1{
+         font-size: 20px;
+         margin-bottom: 20px;
+         text-align: center;
+        }
+        .end p{
+            font-size: 10px;
+            margin-top: 0px;
+            text-align: center;
+        }
+        .home-section{
+            width: 100%;
+             height: 34vh;
+             display: grid;
+             grid-template-columns: 1fr 1fr ;
+             grid-template-rows: 1fr 1fr 1fr ;
+             /* display: flex;
+             flex-wrap: wrap; */
+        }
+        .box1:first-child{
+           display: none;
+        }
+        .box1:nth-child(4) p{
+            font-size: 10px;
+        }
+        .box1:nth-child(2) p{
+            font-size: 10px;
+        }
+        .box1:nth-child(3) p{
+            font-size: 10px;
+        }
+        .box1:nth-child(5) p{
+            font-size: 10px;
+            
+        }
+        .box1:nth-child(6){
+            background-color: #f6f6ff; 
+        }
+        .box1:nth-child(6) p{
+            font-size: 10px;
+        }
+        .box1:nth-child(7) p{
+            font-size: 10px;
+        }
+        .box1:nth-child(4) p{
+            font-size: 10px;
+        }
+        .box1:nth-child(2) h1{
+            font-size: 13px;
+            text-align: center;
+        }
+        .box1:nth-child(3) h1{
+            font-size: 13px;
+            text-align: center;
+        }
+        .box1:nth-child(4) h1{
+            font-size: 13px;
+            text-align: center;
+        }
+        .box1:nth-child(5) h1{
+            font-size: 13px;
+            text-align: center;
+        }
+        .box1:nth-child(6) h1{
+            font-size: 13px;
+            text-align: center;
+        }
+        .box1:nth-child(7) h1{
+            font-size: 13px;
+            text-align: center;
+        }
+        
+        
+    }
+                           
